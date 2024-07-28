@@ -184,7 +184,8 @@ namespace BatchDicomExport
 
 
                             // Select Images, Structure Set, Total Plan Dose
-                            // Ensure only ProKnow Backup export location is selected
+                            // Ensure only ProKnow Backup export location is selected. 
+                            // EDIT THIS SECTION BASED ON YOUR MONACO SETUP.
                             if (dicomExport != null &&
                                 dicomExport.SelectDICOMExportModalities(ExportModality.StructureSet | ExportModality.TotalPlanDose | ExportModality.Images) &&
                                 dicomExport.ToggleDestination("File", false) &&
