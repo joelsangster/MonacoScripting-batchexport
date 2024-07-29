@@ -22,3 +22,5 @@ Some basic error handling is included, such as skipping if the patient is open b
 **ProKnow Users**
 Due to the limited storage of ProKnow, a Python script is included which utilises the ProKnow API to search your ProKnow workspace, and delete plans >1 year old.
 This ensures only the last year of plans are backed up, and storage limit is not reached.
+Edit appropriate fields in the script before running.
+It is recommeded to run the script first with the .delete() (line 58) commented out, to ensure the script does what you expect. 
