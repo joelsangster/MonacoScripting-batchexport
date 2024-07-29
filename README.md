@@ -16,6 +16,9 @@ Steps:
 
 
 Notes:
-Some of the Monaco API methods have built-in exeptions which will stop the script if encountered. This makes custom error handling difficult.
-Despite this, catches were added for each step to minimise the risk of the script stopping. 
+Some of the Monaco API methods have built-in exeptions which will stop the script if encountered. This makes custom error handling difficult. 
 Some basic error handling is included, such as skipping if the patient is open by another user, can't find CSV etc.
+
+**ProKnow Users**
+Due to the limited storage of ProKnow, a Python script is included which utilises the ProKnow API to search your ProKnow workspace, and delete plans >1 year old.
+This ensures only the last year of plans are backed up, and storage limit is not reached.
